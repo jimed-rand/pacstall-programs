@@ -1,0 +1,13 @@
+pkgname="linux-longterm-6.6-deb"
+gives="linux-image-unsigned-6.6.51-060651-generic"
+pkgver="6.6.51"
+buildver="6.6.51-060651.202409121031"
+arch=("arm64" "amd64")
+sha256sums_arm64=("15f2c20cc364c523df0384be20534dc87a52209906d09d4581610f9cb94ccfb0")
+sha256sums_amd64=("e7a84ca24a58dd344e1cc0183cb68d00ef3a2a67c8153f78ef7a7cfdb6286c71")
+source_arm64=("https://kernel.ubuntu.com/mainline/v${pkgver}/arm64/${gives}_${buildver}_arm64.deb")
+source_amd64=("https://kernel.ubuntu.com/mainline/v${pkgver}/amd64/${gives}_${buildver}_amd64.deb")
+pkgdesc="Linux kernel LTS from Ubuntu Mainline Kernel PPA (headers)"
+pacdeps=("linux-longterm-6.6-headers-deb" "linux-longterm-6.6-modules-deb")
+maintainer=("James Ed Randson <jimedrand@disroot.org>")
+repology=("project: linux" "srcname: linux-mainline" "binname: linux-mainline")
